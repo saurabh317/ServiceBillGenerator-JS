@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>ServiceBillGenerator</h1>
+    <div class="Car_container">
+      <label>Select Car Type:</label>
+      <select class="select_car" name="">
+        <option selected disabled hidden value="">Select Car Type</option>
+        <option value="SUV">SUV</option>
+        <option value="Hatchback">HatchBack</option>
+        <option value="Sedan">Sedan</option>
+      </select>
+    </div>
+
+    <div class="serviceBox">
+      <div class="serviceBoxCard">
+        <div class="serviceBoxCardUpper">
+          <h1>BS01</h1>
+          <h2>Basic Servicing</h2>
+          <p>It includes all the basic servicings</p>
+        </div>
+        <div class="serviceBoxCardLower">
+          <span class="servicePrice">Rs.500</span>
+          <button class="SelectBtn" value="BS01">Select</button>
+        </div>
+      </div>
+
+      <div class="serviceBoxCard">
+        <div class="serviceBoxCardUpper">
+          <h1>EF01</h1>
+          <h2>Engine Fixing</h2>
+          <p>It includes all the basic servicings</p>
+        </div>
+        <div class="serviceBoxCardLower">
+          <span class="servicePrice">Rs.100</span>
+          <button class="SelectBtn" value="EF01">Select</button>
+        </div>
+      </div>
+
+      <div class="serviceBoxCard">
+        <div class="serviceBoxCardUpper">
+          <h1>CF01</h1>
+          <h2>Clutch Fixing</h2>
+          <p>It includes all the basic servicings</p>
+        </div>
+        <div class="serviceBoxCardLower">
+          <span class="servicePrice">Rs.600</span>
+          <button class="SelectBtn" value="CF01">Select</button>
+        </div>
+      </div>
+
+      <div class="serviceBoxCard">
+        <div class="serviceBoxCardUpper">
+          <h1>BF01</h1>
+          <h2>Brake Fixing</h2>
+          <p>It includes all the basic servicings</p>
+        </div>
+        <div class="serviceBoxCardLower">
+          <span class="servicePrice">Rs.800</span>
+          <button class="SelectBtn" value="BF01">Select</button>
+        </div>
+      </div>
+
+      <div class="serviceBoxCard">
+        <div class="serviceBoxCardUpper">
+          <h1>GF01</h1>
+          <h2>Gear Fixing</h2>
+          <p>It includes all the basic servicings</p>
+        </div>
+        <div class="serviceBoxCardLower">
+          <span class="servicePrice">Rs.200</span>
+          <button class="SelectBtn" value="GF01">Select</button>
+        </div>
+      </div>
+
+      <div class="generateBillDiv">
+        <button class="generateBill">Generate Bill</button>
+      </div>
+  
+    </div>
+
+  
+    <div class="BillModalOverlay"></div>
+    <div class="BillModal">
+        <div>
+            <span class="modalService">10</span>
+            <span class="modalServicePrice">10</span>
+        </div>
+        <div>
+            <span class="modalService">10</span>
+            <span class="modalServicePrice">10</span>
+        </div>
+        <div>
+            <span class="modalService">10</span>
+            <span class="modalServicePrice">10</span>
+        </div>
+        <div>
+            <span class="modalService">10</span>
+            <span class="modalServicePrice">20</span>
+        </div>
+        <div>
+            <span class="modalService">32</span>
+            <span class="modalServicePrice">40</span>
+          </div>
+        <div class="totalBill">
+          <span>Total Bill: </span>
+          <span class="billPrice"></span>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
